@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="image" src="assets/images/pattern-circle.svg" alt="" />
+    <img
+      class="image"
+      src="assets/images/pattern-squiggly-line-bottom-desktop.svg"
+      alt=""
+    />
+    <img
+      class="image"
+      src="assets/images/pattern-squiggly-line-top.svg"
+      alt=""
+    />
+    <!-- Form starts -->
+    <img src="assets/images/logo-full.svg" alt="" />
+    <h1>Your Journey to Coding Conf <br />2025 Starts Here!</h1>
+    <p>Secure your spot at next year's biggest coding conference.</p>
+
+    <form action="#">
+      <p>Upload Avatar</p>
+      <div>
+        <label for="f">
+          <div alt="" class="avatar"></div>
+          <span>Drag and drop or click to upload</span>
+          <span class="btn">
+            <button
+              type="button"
+              class="remove"
+              style="
+                color: hsl(252, 6%, 83%);
+                background-color: hsl(245, 19%, 35%);
+                padding: 3px 5px;
+                width: fit-content;
+                position: relative;
+                z-index: 10;
+                border-radius: 5px;
+                border: none;
+              "
+            >
+              Remove Image
+            </button>
+            <button
+              type="button"
+              class="change"
+              style="
+                border-radius: 5px;
+                border: none;
+                color: hsl(252, 6%, 83%);
+                background-color: hsl(245, 19%, 35%);
+                padding: 3px 5px;
+                width: fit-content;
+                position: relative;
+                z-index: 10;
+              "
+            >
+              Change Image
+            </button>
+          </span>
+        </label>
+      </div>
+      <input type="file" name="f" id="f" accept="image/*" />
+
+      <p>
+        <i class="fas fa-solid fa-circle-info"></i>Upload your photo (JPG,PNG ,
+        max size:500KB)
+      </p>
+
+      <p>Full Name</p>
+      <input type="text" name="" id="" />
+      <p>Email Address</p>
+      <input type="text" name="" placeholder="example@email.com" />
+      <p>GitHub Username</p>
+      <input type="text" name="" placeholder="@yourusername" />
+      <button type="submit">Generate My Ticket</button>
+    </form>
+    <div class="ticket" style="display: none">
+      <img src="assets/images/pattern-ticket.svg" alt="" />
+      <div class="top">
+        <img src="assets/images/logo-full.svg" alt="" />
+        <p class="date"></p>
+      </div>
+      <div class="bottom">
+        <div class="avatar"></div>
+        <div>
+          <p class="name"></p>
+          <p class="git"><img src="assets/images/icon-github.svg" alt="" /></p>
+        </div>
+      </div>
+      <p class="side"></p>
+    </div>
+    <!-- Form ends -->
+
+    <!-- Generated tickets starts -->
+
+    <!-- Congrats, -->
+    <!-- Full Name! Your ticket is ready. We've emailed your ticket to -->
+    <!-- Email Address -->
+    <!-- and will send updates in the run up to the event. Coding Conf Jan 31, 2025 /
+    Austin, TX -->
+
+    <!-- Generated tickets ends -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Wesam-Harb">Wesam-Harb</a>.
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+body {
+  background: url(assets/images/background-desktop.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: Inconsolata;
+  position: relative;
+}
+body::before {
+  position: absolute;
+  content: url(assets/images/pattern-lines.svg);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.attribution {
+  margin: 20px 0;
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+form {
+  margin: 0 auto;
+  width: 350px;
+  text-align: left;
+}
+input[type="file"] {
+  display: none;
+}
+form div:first-of-type {
+  position: relative;
+}
+label[for="f"] {
+  background-color: hsl(245, 15%, 58%, 0.3);
+  border: 1.4px dashed hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  height: 100px;
+  z-index: 2;
+  position: relative;
+}
+form .avatar {
+  background-image: url(assets/images/icon-upload.svg);
+  position: absolute;
+  background-color: hsl(245, 19%, 35%);
+  background-size: contain;
+  border-radius: 10px;
+  border: 1px solid hsl(245, 15%, 58%);
+  padding: 3px;
+  top: 30%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+
+  transform: translate(-50%, -50%);
+}
+form .btn {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+form div:first-of-type span {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  color: hsl(252, 6%, 83%);
+  text-align: center;
+  width: 100%;
+}
+form p:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: hsl(252, 6%, 83%);
+}
+input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background-color: hsl(245, 15%, 58%, 0.2);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 7px;
+  z-index: 2;
+  text-indent: 10px;
+  color: hsl(252, 6%, 83%);
+}
+
+input::placeholder {
+  color: hsl(245, 15%, 58%);
+  font-family: Inconsolata;
+}
+form button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 7px;
+  border: none;
+  background-color: hsl(7, 88%, 67%);
+  color: hsl(248, 70%, 10%);
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+body .image {
+  position: absolute;
+}
+body > img:first-of-type {
+  top: 50%;
+  right: 20%;
+  width: 150px;
+}
+body > img:nth-of-type(2) {
+  left: -10px;
+  bottom: -10px;
+  width: 550px;
+}
+body > img:nth-of-type(3) {
+  right: -8px;
+  top: 50px;
+}
+.ticket {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.ticket .top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.ticket .bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.bottom p:last-of-type {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(252, 6%, 83%);
+}
+.bottom p:first-of-type {
+  text-align: start;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.ticket .avatar {
+  background-image: url(assets/images/icon-upload.svg);
+  background-color: hsl(245, 19%, 35%);
+  background-size: contain;
+  border-radius: 10px;
+  border: 1px solid hsl(245, 15%, 58%);
+  padding: 3px;
+
+  width: 50px;
+  height: 50px;
+}
+.side {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-lr;
+  color: hsl(245, 15%, 58%);
+}
+@media (width<380px) {
+  body > img:nth-of-type(2) {
+    width: 300px;
+    bottom: -103px;
+  }
+  body > img:nth-of-type(3) {
+    right: -7px;
+    top: 8px;
+    width: 115px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+}
